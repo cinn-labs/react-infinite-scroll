@@ -28,7 +28,6 @@ InfiniteScroll = class InfiniteScroll extends Component {
     const { threshold, loadMore, dontUseWindow } = this.props;
     const component = ReactDOM.findDOMNode(this);
     const scrollElement = window;
-
     let offset;
     if(dontUseWindow) {
       offset = component.offsetHeight - component.parentNode.scrollTop - component.parentNode.clientHeight;
